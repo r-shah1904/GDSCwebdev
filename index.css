@@ -19,66 +19,37 @@ section{
     height: 450px;
     background: red;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
 }
 h2{
-    font-size: 2em;
-    color: #fff;
+    position: inherit;
+    color: white;
     text-align: center;
 }
 .inputbox{
-    position: absolute;
     margin: 30px 0;
     width: 310px;
     border-bottom: 2px solid #fff;
 }
-.inputbox label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    color: #fff;
-    font-size: 1em;
-    pointer-events: none;
-}
-input:focus ~ label,
-input:valid ~ label{
-    top: -5px;
-}
-.inputbox input{
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    border: none;
-    font-size: 1em;
-    padding: 0 35px 0 5px;
-    color: #fff;
-}
-.inputbox ion-icon{
-    position: absolute;
+ion-icon{
+    float: right;
     right: 8px;
     color: #fff;
     font-size: 1.2em;
     top: 20px;
 }
-.forget{
-    margin: -15px 0 15px;
-    font-size: .9em;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-}
-.forget label{
-    margin-right: 3px;
-}
-.forget label a{
-    color: #fff;
+label{
+    margin: auto;
+    color: white;
     text-decoration: none;
+    font-size: 1em;
 }
-.forget label a:hover{
-    text-decoration: underline;
+input{
+    border: 2px solid black;
+    align-self: center;
+    border-radius: 5px;
 }
 button{
     width: 100%;
@@ -91,17 +62,12 @@ button{
     font-size: 1em;
     font-weight: 600;
 }
-.register{
-    font-size: .9em;
-    color: #fff;
-    text-align: center;
-    margin: 25px 0 10px;
+.check{
+    padding-bottom:3px;
 }
-.register p a{
-    text-decoration: none;
-    color: #fff;
-    font-weight:600;
+.forgot{
+    padding: 2px;
 }
-.register p a:hover{
-    text-decoration: underline;
+p{
+    color:white;
 }
